@@ -1,0 +1,403 @@
+html{
+    font-size: 15px;
+    font-family: verdana;
+}
+
+body{
+    margin: 0;
+}
+
+/* start Navigation */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00791E;
+  display: flex;
+}
+
+ul li:last-child{
+    flex: 1;
+}
+
+.nav a{
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  cursor: url(res/cursor.cur), auto;
+}
+
+.nav a:hover {
+  background-color: #2D9437;
+}
+
+.akt{
+    background-color: #2D9437;
+}
+
+
+.nav a:visited{
+    color: #fff;
+}
+
+/* end Navigation */
+
+/* employee_item */
+
+.head{
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.employee_item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 0;
+}
+
+.employee_item:hover{
+    background-color: #E2F9F9;
+}
+
+.employee_item > .pers{
+    width: 5%;
+}
+
+.employee_item > .name{
+    width: 7%;
+}
+
+.employee_item > .fname{
+    width: 7%;
+}
+
+.employee_item > .birthday{
+    width: 10%;
+}
+
+.employee_item > .phone{
+    width: 10%;
+}
+
+.employee_item > .mobile{
+    width: 10%;
+}
+
+.employee_item > .mail{
+    width: 20%;
+}
+
+.employee_item > .room{
+    width: 4%;
+}
+
+.employee_item > .manager{
+    width: 4%;
+}
+
+.employee_item > .deparment{
+    width: 15%;
+}
+
+.add_employee_item{
+    width: 50%;
+    align-items: center;
+    padding: 5px 0 5px 0;
+    margin: auto;
+}
+
+.add_employee_row > .input{
+    width: 100%;
+}
+
+.edit_employee_row{
+    padding: 5px 0 5px 0;
+}
+
+.edit_employee_item{
+    width: 50%;
+    align-items: center;
+    padding: 5px 0 5px 0;
+    margin: auto;
+}
+
+.edit_employee_row > .input{
+    width: 100%;
+}
+
+.edit_employee_row{
+    padding: 5px 0 5px 0;
+}
+
+.customer_item_header{
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+}
+
+.customer_row{
+    margin: 15px;
+}
+
+.customer_item{
+    margin: auto;
+    width: 50%;
+}
+
+.customer_row > *{
+    padding: 5px;
+}
+
+.customer_row > a{
+    color: blue;
+}
+
+.index_item{
+    margin: auto;
+    width: 60%;
+}
+
+.index_item_row{
+    margin: 15px;
+}
+
+.index_item_row a{
+    color: #000;
+    text-decoration: underline;
+    cursor: url(res/cursor.cur), auto;
+}
+
+@media only screen and (max-width: 1440px){
+    .employee_item > .birthday, 
+    .employee_item > .room, 
+    .employee_item > .manager{
+        display: none;
+    }
+    
+    .employee_item > .pers
+    {
+        width: 6%;
+    }
+    .employee_item > .name,
+    .employee_item > .fname,
+    .employee_item > .department
+    {
+        width: 10%;
+    }
+    
+    .employee_item > .phone,
+    .employee_item > .mobile
+    {
+        width: 13%;
+    }
+    
+    .employee_item > .mail{
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width: 1175px){
+    .employee_item > .birthday, 
+    .employee_item > .phone, 
+    .employee_item > .mobile, 
+    .employee_item > .room, 
+    .employee_item > .manager{
+        display: none;
+    }
+    
+    .employee_item > .pers,
+    .employee_item > .name,
+    .employee_item > .fname,
+    .employee_item > .department
+    {
+        width: 12%;
+    }
+    
+    .employee_item > .mail{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .employee_item > .birthday, 
+    .employee_item > .phone, 
+    .employee_item > .mobile, 
+    .employee_item > .room, 
+    .employee_item > .manager, 
+    .employee_item > .department{
+        display: none;
+    }
+    
+    .employee_item > .pers,
+    .employee_item > .name,
+    .employee_item > .fname
+    {
+        width: 20%;
+    }
+    
+    .employee_item > .mail{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .nav .search-container{
+        display: none;
+    }
+    
+    .employee_item > .birthday, 
+    .employee_item > .phone, 
+    .employee_item > .mobile, 
+    .employee_item > .room, 
+    .employee_item > .manager, 
+    .employee_item > .department, 
+    .employee_item > .mail{
+        display: none;
+    }
+    
+    .employee_item > .pers,
+    .employee_item > .name,
+    .employee_item > .fname
+    {
+        width: 33%;
+    }
+}
+
+/* end employee_item */
+
+h1{
+    font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button {
+  background-color: #00791E;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 2px;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  cursor: url(res/cursor.cur), auto;
+}
+
+.button:hover {
+  background-color: #2D9437;
+}
+
+.button-delete {
+  background-color: #FF0000;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 2px;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  cursor: url(res/cursor.cur), auto;
+}
+
+.button-delete:hover {
+  background-color: #FF3E20;
+}
+
+.employee_entry{
+    /*display: table-row;*/
+    padding: 5px;
+}
+
+.emp_cell{
+    display: table-cell;
+    padding-right: 5px;
+    width: 200px;
+}
+
+.input{
+    font-size: 15px;
+    cursor: url(res/cursor.cur), auto;
+    width: 75%;
+    margin-top: 6px;
+    font-family: verdana;
+}
+
+.selector{
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.edit-icon{
+    background-color: #00791E;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 3%;
+    cursor: url(res/cursor.cur), auto;
+}
+
+.edit-icon:hover {
+  background-color: #2D9437;
+  cursor: url(res/cursor.cur), auto;
+}
+
+.search-container {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 5px;
+  margin-right: 16px;
+  background: #00791E;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  cursor: url(res/cursor.cur), auto;
+}
+
+.search{
+    float: none;
+    text-align: left;
+    width: 70%;
+    margin: 0;
+    padding: 5px;
+    cursor: url(res/cursor.cur), auto;
+}
+
+.search-button{
+    background-color: #00791E;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 3%;
+    cursor: url(res/cursor.cur), auto;
+}
